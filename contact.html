@@ -27,26 +27,15 @@
         .container {
             padding: 20px;
         }
-        .contact-form {
+        .form-container {
             background-color: white;
             padding: 20px;
             border: 1px solid #ddd;
         }
-        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+        iframe {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-        }
-        .contact-form input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
+            height: 600px;
             border: none;
-            cursor: pointer;
-        }
-        .contact-form input[type="submit"]:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
@@ -61,24 +50,15 @@
 
 <div class="container">
     <h1>Contact Us</h1>
-    <p>If you have any questions or need assistance, please fill out the form below.</p>
+    <p>If you have any questions or need assistance, please complete the form below.</p>
 
-    <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <input type="submit" value="Send Message">
-    </form>
+    <div class="form-container">
+        <!-- Embed Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHpdszhUUVh7uEjiVSMorq_oQ9uyXuPOrKIaRiDz9f4pvXbw/viewform?usp=sf_link"></iframe>
+    </div>
 </div>
 <footer style="background-color: #343a40; color: white; padding: 10px; text-align: center; margin-top: 20px;">
     <p>&copy; 2024 Food Ordering App. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
